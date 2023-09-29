@@ -1,0 +1,102 @@
+/*section1*/
+.wrapper{
+    background: #f1f1f1;
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+    z-index: 0;
+}
+.wrapper:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+img{
+    float: right;
+    margin: 10px;
+}
+.bleu{
+    background-color: blue;
+    float: right;
+}
+.green{
+    background-color: green;
+    float: left;
+}
+.red{
+    background-color: red;
+}
+.box{
+  height: 100px;
+  width: 100px;
+}
+h2,p{
+    color: red;
+    margin: 10px 0;
+    text-align: center;
+}
+.service{
+    float: left;
+    background: #eee;
+    width: 29%;
+    margin: 1%;
+    max-height: 50px;
+    overflow: hidden;
+padding: 1%;
+}
+.content{
+    background-color: bisque;
+    clear: both;
+    margin: 50px;
+    padding: 10px;
+    position: relative;/*stay in the position for the normal
+    document flow but just offset top and left*/ 
+   
+}
+/*section2*/
+ .services:after{
+    content:"";
+    display: block;
+    clear: both;/*this to get the top 
+    margin for content after the float technique*/
+}
+section,aside{
+    float: left;
+    width: 46%;
+    padding: 1%;
+    margin: 1%;
+    background-color: blue;
+}
+#banner{
+    max-height: 300px;
+    overflow: hidden;
+margin: 1%;
+position:relative;
+}
+#banner h2{
+    position: absolute;/*remove it from normal document flow*/
+    top: 30px;
+   text-align: center;
+   width: 100%;
+    margin: 0;
+}
+.colomuns:after{
+    content:"";
+    display: block;
+    clear: both;/*this to get the top 
+    margin for content after the float technique*/
+}
+nav li{
+    float: right;
+    list-style-type: none;padding: 10px;
+    margin: 10px;
+}
+nav{
+    position: fixed;
+    padding: 5px;
+    background-color: #333;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
